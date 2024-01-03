@@ -4,8 +4,4 @@
 
 ### Screenshots de la GUI
 
-![](Captura1.JPG)
-
-![](Captura2.JPG)
-
-![](Captura3.jpeg)
+![](CAPTURA1.jpg)
