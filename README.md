@@ -1,6 +1,10 @@
 # SORTEO_FRONT
 
-
+# Tabla de contenido
+- [Objetivo](#Objetivo)
+- [Descripción del dominio de datos](#Descripción-del-dominio-de-datos)
+- [Frontend](#Frontend)
+  * [Screenshots de la GUI](#Screenshots-de-la-GUI)
 
 ### Screenshots de la GUI
 
