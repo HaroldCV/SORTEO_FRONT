@@ -17,22 +17,28 @@ const NumberBox = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid #3498db;
-  margin: 5px;
-  font-size: 5.5em;
+  border: 7px solid #000000;
+  margin: 10px;
+  font-size: 8.5em;
   font-weight: bold;
   border-radius: 5%; 
   overflow: hidden; 
+  font-family: 'Orbitron', sans-serif; 
   animation: ${({ spinning }) => (spinning ? css`${spinAnimation} 2s linear infinite` : 'none')};
+  color: ${({ textColor }) => textColor || '#fdba1d'}; 
+  text-shadow: 6px 2px 2px black;
+  -webkit-text-stroke: 3.5px black; 
+  text-stroke: 2px black;
+  margin-top:150px;
 `;
-
+//text-shadow: 8px 2px 2px black;
 
 const SpinningNumberDisplay = styled(NumberBox).withConfig({
   shouldForwardProp: (prop) => prop !== 'spinning',
 })``;
 
-const NumberDisplay = ({ digit, spinning }) => (
-  <SpinningNumberDisplay spinning={spinning}>
+const NumberDisplay = ({ digit, spinning, textColor }) => (
+  <SpinningNumberDisplay spinning={spinning} textColor={textColor}>
     {digit}
   </SpinningNumberDisplay>
 );
